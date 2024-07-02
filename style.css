@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    background-color: #325880;
+    font-family: Helvetica;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#mesa {
+    height: 82vmin;
+    width: 160vmin;
+    margin: 0;
+    padding: calc((100vh - 82vmin)/2) calc((100vw - 160vmin)/2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-flow: row wrap;
+    gap: 4vmin;
+}
+
+#citation {
+    position: absolute;
+    bottom: 0px;
+}
+
+#citation p {
+    font-size: 2vmin;
+    color: #00000040;
+    padding-left: calc((100vw - 160vmin)/2 + 4vmin);
+    padding-bottom: 2vmin;
+}
+
+#citation p a {
+    color: #00000040;
+}
+
+.card {
+    height: 22vmin; 
+    width: 22vmin; 
+    background-color: #f5f5dc;
+
+    border-radius: 2vmin;
+    box-shadow: 1px 1px 4px #00000040, 4px 4px 10px #00000040; 
+
+    cursor: pointer;  
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.4s;  
+    transform-style: preserve-3d; 
+}
+
+.card img {
+    height: 22vmin; 
+    width: 22vmin; 
+
+    border-radius: 2vmin;
+
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.card.view {  
+    transform: rotateY(180deg);
+}
+
+.collected {
+    opacity: 0;
+    cursor: default; 
+} 
