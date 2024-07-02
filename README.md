@@ -8,7 +8,7 @@ A memory game using images of proteins from the Protein Data Bank (PDB).
 
 ## Data
 
-A list of PDB IDs was retrieved from [rcsb.org](rcsb.org) on May 2, 2024,
+A list of PDB IDs was retrieved from [rcsb.org](https://www.rcsb.org) on May 2, 2024,
 using the following search criteria:
 
 * Entry polymer types is Protein (only)
