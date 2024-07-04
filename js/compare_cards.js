@@ -1,6 +1,6 @@
 // Compare selected pair of cards
 function compare(cards) {
-    if (cards[0].innerHTML === cards[1].innerHTML) {
+    if (cards[0].dataset.pdb === cards[1].dataset.pdb) {
         collect(cards);
     } else {
         wrong(cards);
