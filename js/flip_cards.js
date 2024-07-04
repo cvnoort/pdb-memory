@@ -14,11 +14,12 @@ function turnCard() {
     cardsViewed = document.querySelectorAll(".view:not(.collected)"); 
 
     // If updated total is not two, do nothing
-    if (cardsViewed < 2) {
+    if (cardsViewed.length < 2) {
         return;
     }
-
-    // Compare the visible cards
-    compare(cardsViewed);
+    else {
+        // Compare the visible cards
+        compare(cardsViewed);
+    }
 
 }
