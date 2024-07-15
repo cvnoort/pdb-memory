@@ -1,3 +1,8 @@
+function countGuess() {
+    guesses++;
+    document.querySelector("#guesses").innerText = guesses;
+}
+
 function turnCard() {
     
     // List visible cards
@@ -20,6 +25,7 @@ function turnCard() {
     else {
         // Compare the visible cards
         compare(cardsViewed);
+        countGuess();
     }
 
 }

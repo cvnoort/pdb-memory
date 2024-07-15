@@ -11,3 +11,5 @@ document.querySelectorAll(".card").forEach(
     } 
 );
 
+// Initialize guess counter
+var guesses = 0;
