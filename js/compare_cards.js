@@ -22,6 +22,5 @@ function wrong(cards) {
         cards.forEach(function(element) {
             element.classList.remove("view");
         });
-    }, 2000);
-    
+    }, 2000);   
 }

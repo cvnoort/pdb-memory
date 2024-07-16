@@ -48,9 +48,11 @@ with the corresponding image for each entry in the resulting `listPDB`.
 The `turnCard()` function assigns a `view` class to cards when clicked, 
 which makes their image visible. 
 It then calls the `compare(cards)` function to compare pairs.
+It also calls the `countGuess()` function, which 
+increases the guess counter by one, each time a pair of cards has been selected.
 
 #### `compare_cards.js`
-The `compare(cards)` function compares the `innerHTML` property of two cards. 
+The `compare(cards)` function compares the PDB ID of two cards. 
 If they are the same, the `collect(cards)` function is called, 
 otherwise the `wrong(cards)` is called. 
 The `wrong(cards)` function flips both cards back around 
@@ -59,9 +61,13 @@ The `collect(cards)` function adds a `collected` class to both cards
 after 1 second, which makes them disappear from view.
 
 #### `index.js`
-Selects 9 PDB IDs, generates cards with their images, 
+The `startGame()` function selects 9 PDB IDs, 
+generates cards with their images, 
+initializes a guess counter at 0,
 and flips and compares cards when clicked, 
 using the functions defined in above scripts.
+This function is called whenever the page is loaded to start the game,
+as well as whenever the "Restart" button is clicked.
 
 ## Future directions
 
