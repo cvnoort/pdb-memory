@@ -19,15 +19,32 @@ nav {
 
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 
-#counter {
+.nav-item {
     margin: 0vh 4vh;
+    padding: 0vh 4vh;
 }
 
 #guesses {
     font-weight: bold;
+}
+
+#restart {
+    height: 8vh;
+    border: none;
+    background-color: #f5f5dc00;
+    color: #325880;
+    font-family: Helvetica;
+    font-size: 4vmin;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#restart:hover {
+    background-color: #325880;
+    color: #f5f5dc;
 }
 
 #mesa {
@@ -99,6 +116,10 @@ footer p a {
 
 @media only screen and (max-width: 768px) { 
 
+    .nav-item {
+        margin: 0vh;
+    }    
+
     #mesa {
         height: 160vw;
         width: 82vw;
@@ -107,6 +128,10 @@ footer p a {
     footer {
         width: 82vw;
         justify-content: center;
+    }
+
+    footer p {
+        margin: 4vh 0vh;
     }
 
 }

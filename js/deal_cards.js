@@ -26,6 +26,9 @@ function selectPDB(nc) {
 
 function makeCards(listPDB) {
 
+    // Remove any existing cards
+    mesa.innerHTML = "";
+
     listPDB.forEach(function(PDB) {
 
         // Get URL for image of the selected PDB entry
