@@ -50,6 +50,9 @@ which makes their image visible.
 It then calls the `compare(cards)` function to compare pairs.
 It also calls the `countGuess()` function, which 
 increases the guess counter by one, each time a pair of cards has been selected.
+When all pairs have been collected, the `showAll()` function 
+makes all cards visible (the `collected` class is replaced by `review`).
+Clicking any of the cards will then open the corresponding RCSB PDB entry page.
 
 #### `compare_cards.js`
 The `compare(cards)` function compares the PDB ID of two cards. 

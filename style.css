@@ -113,6 +113,9 @@ footer p a {
     cursor: default; 
 } 
 
+.review img {
+    backface-visibility: visible;
+}
 
 @media only screen and (max-width: 768px) { 
 

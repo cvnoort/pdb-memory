@@ -40,10 +40,10 @@ function makeCards(listPDB) {
         card.innerHTML = 
             '<img src="' + pdbimg + '"' +
             'alt="'+ PDB + '"' +
-            'class="content"' +
-            '>'
+            '>';
         card.classList.add("card");
         card.setAttribute("data-pdb", PDB);
+        card.setAttribute("data-pdbimg", pdbimg);
         
         // Place cards on table in previously randomized order
         mesa.appendChild(card);
